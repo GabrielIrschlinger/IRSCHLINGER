@@ -1,0 +1,7 @@
+@font-face {
+    font-family:'fontp';
+    src: url(/assets/font/font_principal.ttf);
+}
+body{
+    background-color: #f5f4f4;
+}

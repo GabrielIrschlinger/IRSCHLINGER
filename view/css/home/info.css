@@ -1,0 +1,44 @@
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#img_principal{
+    width: 45vw;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+    top: 5vw;
+    left: 12vw;
+}
+#textos_principais{
+    width: 30vw;
+    height: auto;
+    position: absolute;
+    top: 20vw;
+}
+#nome{
+    font-family:fontp;
+    font-size: 6vw;
+    position: absolute;
+    right: 20.5vw;
+    top: 11vw;
+}
+#sobrenome{
+    font-family:fontp ;
+    font-size: 3.1vw;
+    position: absolute;
+    right: 23.58vw;
+    top:18.7vw;
+
+}
+#sobre_mim{
+    font-family:fontp ;
+    font-size: 1vw;
+    position: absolute;
+    top: 23vw;
+    width: 27vw;
+    right: 17.6vw;
+    text-align: left;
+}

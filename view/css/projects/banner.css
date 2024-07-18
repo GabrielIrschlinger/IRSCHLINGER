@@ -1,0 +1,58 @@
+#banner_btns{
+    height: 22vw;
+}
+#banner{
+    position: absolute;
+    left: -000vw;
+    width: 600vw;
+    height: 22vw;
+    display: flex;
+    flex-direction: row;
+    margin: 0.5vw 0; 
+
+    transition: left 0.3s ease-in-out;
+}
+
+#banner div{
+    width: 90vw;
+    height: 22vw;
+    margin: 0 5vw;
+    background-color: green;
+}
+#banner div h3, #banner div h6{
+    margin: 0 2vw;
+    color: #F5F4F4;
+}
+#banner div h3{
+    font-size:4.5vw;
+    font-family: 'fontS';
+}
+#banner div h6{
+    font-size: 1.5vw;
+    font-family: 'fontP';
+}
+
+#btns{
+    position: absolute;
+    top: 26.5vw;
+    width: 100vw;
+    height: 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#btns div{
+    width: 1.2vw;
+    height: 1.2vw;
+}
+
+#btns div{
+    border-radius: 100vw;
+    margin: 0 0.5vw;
+    background-color: white;
+
+    transition: all 0.2s ease-in-out;
+}

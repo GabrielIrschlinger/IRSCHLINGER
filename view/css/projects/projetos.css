@@ -1,0 +1,18 @@
+@import url(../header.css);
+@import url(../fonts.css);
+@import url(../projects/banner.css);
+@import url(../projects/lista_cards.css);
+@import url(../projects/habilits.css);
+body{
+    background-color: white;
+    margin: 0;
+    width: 100vw;
+    height: 100vw;
+    overflow-x: hidden ;
+}
+
+@media (max-width: 425px) {
+    body{
+        overflow: auto;
+    }
+}
