@@ -1,2 +1,20 @@
-@import url(/css/header.css);
-@import url(/css/fonts.css);
+@import url(../header.css);
+@import url(../fonts.css);
+#img_em{
+    width: 15vw;
+    height: 10vw;
+    position: absolute;
+    z-index: -1;
+    top: 9vw;
+    left: 41vw;
+
+}
+#img_emdois{
+    width: 50vw;
+    height: 30vw;
+    position: absolute;
+    z-index: -1;
+    top: 18vw;
+    left: 25vw;
+
+}

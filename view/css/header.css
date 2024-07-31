@@ -3,7 +3,7 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;    
 }
 header div{
     display: flex;
@@ -35,8 +35,7 @@ button h4{
     align-items: center;
     box-shadow: 0.1vw 0.2vw 0.3vw rgba(35, 35, 35, 0.5)
 }
-.bnt h4,.bnt i{
-   font-family:fontp ;
+.bnt i{
    font-size: 1vw;
    margin: 0.4vw;
    color: #f5f4f4;
@@ -53,4 +52,10 @@ button h4{
 }
 #proficao{
     font-family: fontp;
+}
+h4{
+    font-family:fontp;
+    font-size: 1vw;
+    margin: 0.4vw;
+    color: #f5f4f4;
 }

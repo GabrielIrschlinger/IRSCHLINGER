@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bryam Assolini - Projetos</title>
+    <title>GABRIEL IRSCHLINGER - Projetos</title>
 
     <link rel="stylesheet" href="../css/projects/projetos.css">
-    <script src="https://kit.fontawesome.com/398cd98506.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3997afc685.js" crossorigin="anonymous"></script>
     <script type="module" src="/controller/projects/projetos.js" defer></script>
 </head>
 <body>
@@ -24,12 +24,12 @@
                 <i class="fa-solid fa-house"></i>
             </button>
 
-            <button id="bnt_formacao" class="bnt" onclick="window.location.href='/pages/formacao.html'">
+            <button id="bnt_formacao" class="bnt" onclick="window.location.href='formacao.html'">
                 <h4>Formação</h4>
                 <i class="fa-solid fa-graduation-cap"></i>
             </button>
 
-            <button id="btn_projetos" class="bnt" onclick="window.location.href='/pages/projetos.html'">
+            <button id="btn_projetos" class="bnt" onclick="window.location.href='projetos.html'">
                 <h4>Projetos</h4>
                 <i class="fa-solid fa-book"></i>
             </button>
@@ -67,10 +67,18 @@
                 class="fa-brands fa-square-github"></i></button>
         <button class="btn_footer" onclick="window.location.href='https://linkedin.com'"><i
                 class="fa-brands fa-linkedin"></i></button>
-        <button class="btn_footer" onclick="window.location.href='https://instagram.com'"><i
+        <button class="btn_footer" onclick="window.location.href='https://instagram.com/Gabriel_irsch'"><i
                 class="fa-brands fa-square-instagram"></i></button>
         <button class="btn_footer" onclick="window.location.href='https://twitter.com'"><i
                 class="fa-brands fa-square-twitter"></i></button>
     </footer>
+    <section id="criar_card">
+        <div>
+            <input type="text" id="input_titulo">
+            <input type="text" id="input_descricao">
+            <input type="text" id="input_img">
+            <button id="btn_criar_card" onclick="addCard()">CRIAR</button>
+        </div>
+    </section>
 </body>
 </html>

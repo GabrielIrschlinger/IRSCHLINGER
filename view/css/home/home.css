@@ -1,10 +1,11 @@
 @import url(../header.css);
 @import url(../home/info.css);
 @import url(../fonts.css);
+@import url(../projects/footer.css);
 body{
     background-color: white;
     margin: 0;
     width: 100vw;
     height: 100vw;
-    overflow-x: hidden;
+    overflow: hidden;
 }

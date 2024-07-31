@@ -1,11 +1,10 @@
-
-const totalBanners = 5;
+const totalBanners = 4;
 let bannerAtual = 1;
 let intervaloTrocaBanner;
 
-const titlesBanner = ["TRANSPORTE COMUNITARIO - FB", " ", " ", " ", "", ];
-const textsBanner = ["Feito em HTML/CSS/JS e API do GOOLE MAPS", " ", " ", " ", " ", ];
-const colorsBanner = ["#981aca", "#26B2DA", "#F2BA57","#981aca", "#26B2DA", "#F2BA57"];
+const titlesBanner = ["Transporte Comunitario -FB", "The Vest", "Modelos Para Lojas Online", "Loja Dropshipping",];
+const textsBanner = ["Feito em HTML/CSS/JS e API do GOOGLE MAPS (desenvolvido em sala SENAC/PR)", "Em Desinvolvimento Com VITOR KANOFF", "Proximo projeto (EM ANÁLISE)", "(EM ANÁLISE)"];
+const colorsBanner = ["#981aca", "#26B2DA", "#F2BA57","#981aca", "#26B2DA",];
 
 let banner = document.getElementById("banner");
 let btns = document.getElementById("btns");
@@ -49,7 +48,7 @@ export function startAutoSwap() {
     intervaloTrocaBanner = setInterval(autoTrocaBanner, 3000); // Troca a cada 3 segundos
 }
 
-function autoTrocaBanner() {
+export function autoTrocaBanner() {
     bannerAtual = (bannerAtual >= totalBanners) ? 1 : bannerAtual + 1;
     trocaBanner(bannerAtual);
 }

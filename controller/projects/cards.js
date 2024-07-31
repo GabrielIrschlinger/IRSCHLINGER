@@ -1,37 +1,111 @@
-// let divs = [];
-// let titulos = ['MAÇÃ', 'BANANA', 'PERA'];
-// let textos = ['ACO', 'ACO', 'ACO,'];
-// let imgs = ['img.png', 'logo.png', 'img.png'];
+// cards com banco de dados
+export class CriadorCards {
+    constructor() {
+        this.cards_projetos = document.getElementById('cards_projetos');
+        this.divs = [];
+        this.criar_card = document.getElementById('criar_card');
+        this.input_titulo = document.getElementById('input_titulo');
+        this.input_descricao = document.getElementById('input_descricao');
+        this.input_img = document.getElementById('input_img');
 
-// let cards_projetos = document.getElementById('cards_projetos');
+        this.addCard = this.addCard.bind(this);
+        this.removerCard = this.removerCard.bind(this);
+    }
 
-// export function criarCards() {
+    async criarCards() {
+        const response = await fetch('http://127.0.0.1:3000/pegaCards');
+        const data = await response.json();
+        const projetos = data.projetos;
 
-//     for (var i = 0; i < titulos.length; i++) {
-//         var div = document.createElement('div');
+        this.cards_projetos.innerHTML = '';
+        this.divs = [];
+    
+        for (let i = 0; i < projetos.length; i++) {
+            var div = document.createElement('div');
+    
+            div.className = 'card';
+            this.divs.push(div);
+            this.cards_projetos.appendChild(div);
+        }
+    
+        for (let i = 0; i < projetos.length; i++) {
+            var div = document.createElement('div');
+            var img = document.createElement('img');
+            var h3 = document.createElement('h3');
+            var p = document.createElement('p');
+            var btn = document.createElement('button');
+    
+            btn.textContent = 'Remover';
+            btn.className = 'btnDel';
+            btn.addEventListener('click', () => {
+                this.removerCard(projetos[i].id);
+            });
+    
+            img.src = '../../assets/img/'+ projetos[i].img;
+            img.style.width = '5vw';
+    
+            h3.textContent = projetos[i].titulo;
+    
+            p.textContent = projetos[i].descricao;
+    
+            div.appendChild(img);
+            div.appendChild(h3);
+            div.appendChild(p);
+            div.appendChild(btn);
+            this.divs[i].appendChild(div);
+        }
+    
+        let divAdd = document.createElement('div');
+        divAdd.className = 'card cardAdd';
+        divAdd.addEventListener('click', () => {
+            this.criar_card.style.display = 'flex';
+        });
+    
+        let icon = document.createElement('i');
+        icon.className = "fa-solid fa-plus iconeMais";
+    
+        divAdd.appendChild(icon);
+        this.cards_projetos.appendChild(divAdd);
+    }
 
-//         div.className = 'card';
-//         divs.push(div);
-//         cards_projetos.appendChild(div);
-//     }
+    async addCard() {
+        const nome = this.input_titulo.value;
+        const descricao = this.input_descricao.value;
+        const img = this.input_img.value;
 
-//     for (var i = 0; i < titulos.length; i++) {
-//         var div = document.createElement('div');
-//         var img = document.createElement('img');
-//         var h3 = document.createElement('h3');
-//         var p = document.createElement('p');
+        const response = await fetch('http://127.0.0.1:3000/addCard', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ nome, descricao, img })
+        });
+        const result = await response.json();
 
-//         img.src = '../assets/img/img_base.svg';
-//         img.style.width = '5vw';
+        if (response.status === 201) {
+            console.log(result.message);
+            this.criar_card.style.display = 'none';
+            this.criarCards();
+        } else {
+            console.error(result.error);
+        }
+    }
 
-//         h3.textContent = titulos[i];
+    async removerCard(id) {
+        const response = await fetch('http://127.0.0.1:3000/deleteCards', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ cardId: id })
+        });
+        const result = await response.json();
 
-//         p.textContent ='Aqui vai a descrição do projeto com informações de linguagem funcionamento e objetivo..';
-
-//         div.appendChild(img);
-//         div.appendChild(h3);
-//         div.appendChild(p);
-
-//         divs[i].appendChild(div);
-//     }
-// }
+        if (response.status === 201) {
+            console.log(result.message);
+            this.criarCards();
+        } else {
+            console.error(result.error);
+        }
+    }
+}

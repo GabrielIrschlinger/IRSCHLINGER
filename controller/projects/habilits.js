@@ -1,10 +1,10 @@
 let habilitActual = 1;
-let totalHabilits = 4;
+let totalHabilits = 3;
 let intervaloTroca;
 
-let frameworksHabilits= ["REACT", "NEXT", "NEST", "FLUTTER"];
-let areasHabilits= ["GAMES", "WEB", "APPS", "FULL-STACK"];
-let linguagensHabilits= ["HTML/CSS", "JS", "DART", "JAVA"];
+let frameworksHabilits= ["EM", "APRENDIZAGEM", "??!!"];
+let areasHabilits= ["WEB", "BACK-END", "FRONT-END"];
+let linguagensHabilits= ["HTML", "CSS", "JS"];
 
 let frameworks = document.getElementById("frameworks_nav");
 let areas = document.getElementById("areas_nav");
