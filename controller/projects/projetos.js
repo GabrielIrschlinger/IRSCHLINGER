@@ -1,9 +1,9 @@
-import { trocaBanner } from "./banner.js";
-import { startAutoSwap } from "./banner.js";
-import { criarBanners } from "./banner.js";
-import { startAutoSwapHabilits } from "./habilits.js";
-import { criarHabilits } from "./habilits.js";
-import { CriadorCards } from "./cards.js";
+import { trocaBanner } from "../../controller/projects/banner.js";
+import { startAutoSwap } from "../../controller/projects/banner.js";
+import { criarBanners } from "../../controller/projects/banner.js";
+import { startAutoSwapHabilits } from "../../controller/projects/habilits.js";
+import { criarHabilits } from "../../controller/projects/habilits.js";
+import { CriadorCards } from "../../controller/projects/cards.js";
 
 
 window.trocaBanner = trocaBanner;
