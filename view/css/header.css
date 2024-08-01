@@ -59,3 +59,96 @@ h4{
     margin: 0.4vw;
     color: #f5f4f4;
 }
+/* Estilos gerais */
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;    
+}
+header div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 1vw;
+}
+/* Configuração da logo */
+#img_logo{
+    width: 3vw;
+    height: 3vw;
+    background-color: #f5f4f4;
+    border-radius: 50vw;
+    margin: 1.5vw 0.75vw;
+    box-shadow: 0.1vw 0.2vw 0.3vw rgba(35, 35, 35, 0.5)
+}
+/* Configuração dos botões */
+button h4{
+    margin: 0;
+}
+.bnt{
+    width: 12vw;
+    height: 2.3vw;
+    border: none;
+    border-radius: 20vw;
+    margin: 0 0.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0.1vw 0.2vw 0.3vw rgba(35, 35, 35, 0.5)
+}
+.bnt i{
+   font-size: 1vw;
+   margin: 0.4vw;
+   color: #f5f4f4;
+}
+
+#btn_home{
+    background-color: #981aca;
+}
+#bnt_formacao{
+    background-color: #2f54a5;
+}
+#btn_projetos{
+    background-color: #eea019;
+}
+#proficao{
+    font-family: fontp;
+}
+h4{
+    font-family: fontp;
+    font-size: 1vw;
+    margin: 0.4vw;
+    color: #f5f4f4;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header div {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0.5vw 0;
+    }
+    #img_logo {
+        width: 8vw;
+        height: 8vw;
+        margin: 1vw 0;
+    }
+    .bnt {
+        width: 30vw;
+        height: 4vw;
+        margin: 0.5vw 0;
+        box-shadow: 0.2vw 0.4vw 0.6vw rgba(35, 35, 35, 0.5);
+    }
+    .bnt i {
+        font-size: 2vw;
+        margin: 0.8vw;
+    }
+    h4 {
+        font-size: 2vw;
+        margin: 0.8vw;
+    }
+}
