@@ -36,7 +36,9 @@ body{
     height: 100vw;
     overflow-x: hidden ;
 }
-
+@media (max-width: 768px) {
+    body{overflow-x:hidden;
+}}
 @media (max-width: 425px) {
     body{
         overflow: auto;
