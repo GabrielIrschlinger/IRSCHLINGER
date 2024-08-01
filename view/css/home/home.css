@@ -1,7 +1,7 @@
-@import url(../header.css);
-@import url(../home/info.css);
-@import url(../fonts.css);
-@import url(../projects/footer.css);
+@import url(../../css/header.css);
+@import url(../../css/home/info.css);
+@import url(../../css/fonts.css);
+@import url(../../css/projects/footer.css);
 body{
     background-color: white;
     margin: 0;
