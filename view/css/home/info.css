@@ -5,12 +5,10 @@ section{
     align-items: center;
 }
 #img_principal{
-    width: 45vw;
-    height: auto;
-    position: absolute;
+   width: 100vw;
+   height: 50vw;
     z-index: -1;
-    top: 5vw;
-    left: 12vw;
+    margin-left: vw;
 }
 #textos_principais{
     width: 30vw;
@@ -23,24 +21,27 @@ section{
     font-size: 6vw;
     position: absolute;
     right: 20.5vw;
-    top: 11vw;
+    top: 9vw;
+    color: white;
 }
 #sobrenome{
     font-family:fontp ;
     font-size: 3.1vw;
     position: absolute;
     right: 23.58vw;
-    top:18.7vw;
+    top:16.7vw;
+    color: white;
 
 }
 #sobre_mim{
     font-family:fontp ;
     font-size: 1vw;
     position: absolute;
-    top: 23vw;
+    top: 21vw;
     width: 27vw;
     right: 17.6vw;
     text-align: left;
+    color: white;
 }
 /* Estilos para dispositivos móveis */
 @media (max-width: 768px) {

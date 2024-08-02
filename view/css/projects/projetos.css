@@ -5,7 +5,9 @@
 @import url(../projects/lista_cards.css);
 @import url(../projects/habilits.css);
 @import url(../projects/inputs.css);
-
+#img_principal{
+    z-index: -2;
+}
 footer{
     width: 99.5vw;
     height: 6vw;
