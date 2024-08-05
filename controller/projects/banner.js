@@ -4,7 +4,7 @@ let intervaloTrocaBanner;
 
 const titlesBanner = ["Transporte Comunitario -FB", "The Vest", "Modelos Para Lojas Online", "Loja Dropshipping",];
 const textsBanner = ["Feito em HTML/CSS/JS e API do GOOGLE MAPS (desenvolvido em sala SENAC/PR)", "Em Desinvolvimento Com VITOR KANOFF", "Proximo projeto (EM ANÁLISE)", "(EM ANÁLISE)"];
-const colorsBanner = ["#005C8E", "#006BA5", "#008EDA","#005C8E", "#006BA5",];
+const colorsBanner = ["#003857", "#00486F", "#005786","#00669D", "#00669D",];
 
 let banner = document.getElementById("banner");
 let btns = document.getElementById("btns");
