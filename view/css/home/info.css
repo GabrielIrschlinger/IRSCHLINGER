@@ -5,11 +5,11 @@ section{
     align-items: center;
 }
 #img_principal{
-    position: absolute;
+    /* position: absolute;
    width: 100vw;
    height: 50vw;
     z-index: -1;
-    top: 5vw;
+    top: 5vw; */
 }
 #textos_principais{
     width: 30vw;
@@ -83,4 +83,8 @@ section{
         text-align: center;
         margin-top: 5vw;
     }
+}
+
+#proficao{
+    color: white;
 }

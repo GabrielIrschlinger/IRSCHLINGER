@@ -8,4 +8,8 @@ body{
     width: 100vw;
     height: 100vw;
     overflow: hidden;
+    background-image:url(/assets/img/body.jpg);
+    background-position: center;
+    background-size: ;
+
 }
