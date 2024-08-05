@@ -5,10 +5,11 @@ section{
     align-items: center;
 }
 #img_principal{
+    position: absolute;
    width: 100vw;
    height: 50vw;
     z-index: -1;
-    margin-left: vw;
+    top: 5vw;
 }
 #textos_principais{
     width: 30vw;
