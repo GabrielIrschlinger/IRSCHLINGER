@@ -1,8 +1,7 @@
 @import url(../header.css);
 @import url(../fonts.css);
 #img_em{
-    width: 15vw;
-    height: 10vw;
+    height: 20vw;
     position: absolute;
     z-index: -1;
     top: 20vw;
@@ -10,7 +9,7 @@
 
 }
 #img_emdois{
-    width: 50vw;
+    width: 100vw;
     height: 30vw;
     position: absolute;
     z-index: -1;
