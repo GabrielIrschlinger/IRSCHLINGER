@@ -1,15 +1,13 @@
-@import url(../../../view/css/header.css);
-@import url(../../../view/css/home/info.css);
-@import url(../../../view/css/fonts.css); 
-@import url(../../../view/css/projects/footer.css);
+@import url(/view/css/header.css);
+@import url(/view/css/home/info.css);
+@import url(/view/css/fonts.css); 
+@import url(/view/css/projects/footer.css);
 body{
     background-color: white;
     margin: 0;
-    width: 100vw;
-    height: 100vw;
+    width: 200vw;
+    height: 200vw;
     overflow: hidden;
     background-image:url(/assets/img/body.jpg);
     background-position: center;
-    background-size: ;
-
 }
