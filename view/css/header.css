@@ -9,7 +9,7 @@ header div{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0 1vw;
+    margin: 1vw 1vw;
 }
 /*configuração da logo*/
 #img_logo{

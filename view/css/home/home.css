@@ -5,9 +5,8 @@
 body{
     background-color: white;
     margin: 0;
-    width: 200vw;
-    height: 200vw;
     overflow: hidden;
     background-image:url(/assets/img/body.jpg);
     background-position: center;
+    background-size: 100vw;
 }
